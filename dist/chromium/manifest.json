@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Dual Subtitles",
+  "version": "6.0.0",
+  "description": "Render bilingual subtitles on Netflix by sampling subtitle tracks already rendered by Netflix.",
+  "action": {
+    "default_title": "Netflix Dual Subtitles",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.netflix.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "injected.js"
+      ],
+      "matches": [
+        "https://www.netflix.com/*"
+      ]
+    }
+  ]
+}

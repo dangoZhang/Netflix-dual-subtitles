@@ -1,26 +1,3 @@
-// ==UserScript==
-// @name         Netflix Dual Subtitles
-// @namespace    https://github.com/dangoZhang/Netflix-dual-subtitles
-// @version      6.0.0
-// @description  Bilingual subtitle overlay for Netflix. Supports Tampermonkey and Violentmonkey on Chrome, Edge, Firefox, and Safari.
-// @author       dangoZhang
-// @match        https://www.netflix.com/*
-// @run-at       document-start
-// @grant        unsafeWindow
-// @homepageURL  https://github.com/dangoZhang/Netflix-dual-subtitles
-// @supportURL   https://github.com/dangoZhang/Netflix-dual-subtitles/issues
-// @downloadURL  https://raw.githubusercontent.com/dangoZhang/Netflix-dual-subtitles/main/Netflix-dual-subtitles.user.js
-// @updateURL    https://raw.githubusercontent.com/dangoZhang/Netflix-dual-subtitles/main/Netflix-dual-subtitles.user.js
-// ==/UserScript==
-
-(() => {
-  const pageWindow =
-    typeof unsafeWindow !== 'undefined'
-      ? unsafeWindow
-      : typeof window.wrappedJSObject !== 'undefined'
-        ? window.wrappedJSObject
-        : window;
-
 function bootNetflixDualSubtitles(pageWindow, runtime = {}) {
   const APP_KEY = '__NFDS_APP__';
   const OPEN_SETTINGS_EVENT = '__NFDS_OPEN_SETTINGS__';
@@ -1357,9 +1334,3 @@ function bootNetflixDualSubtitles(pageWindow, runtime = {}) {
     void maybeAutoAttach();
   }, 0);
 }
-
-  bootNetflixDualSubtitles(pageWindow, {
-    platform: 'userscript',
-    version: '6.0.0',
-  });
-})();

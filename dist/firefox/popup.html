@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Dual Subtitles</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        width: 300px;
+        margin: 0;
+        padding: 16px;
+        background: #101010;
+        color: #fff;
+        font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+
+      p {
+        margin: 0 0 10px;
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 34px;
+        padding: 0 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+
+      .hint {
+        margin-top: 14px;
+        padding: 12px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.06);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Netflix Dual Subtitles</h1>
+    <p>Open a Netflix watch page, then click the floating <strong>Dual Subtitles</strong> button or press <strong>Alt + Shift + D</strong>.</p>
+    <div class="links">
+      <a class="pill" href="https://www.netflix.com/browse" target="_blank" rel="noreferrer">Open Netflix</a>
+      <a class="pill" href="https://github.com/dangoZhang/Netflix-dual-subtitles#readme" target="_blank" rel="noreferrer">README</a>
+    </div>
+    <div class="hint">
+      Version 6.0.0<br />
+      Tip: leave Netflix subtitles enabled once so the page keeps rendering subtitle DOM nodes for sampling.
+    </div>
+  </body>
+</html>
