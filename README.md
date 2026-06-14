@@ -1,16 +1,16 @@
 # Netflix-dual-subtitles
 
-> Use Netflix-dual-subtitles to add bilingual subtitles to Netflix with a userscript or browser extension.
+> Use Netflix with two subtitle languages on screen at once.
 
-Use Netflix-dual-subtitles to add bilingual subtitles to Netflix with a userscript or browser extension.
+`Netflix-dual-subtitles` is a lightweight bilingual subtitle overlay for Netflix, packaged for userscript and browser-extension workflows.
 
 ## Why
-Developers and maintainers who need to add bilingual subtitles to Netflix with a userscript or browser extension.
+Language learners often need the original subtitle and a translation together. Netflix does not make that flow effortless, so this project keeps the overlay small and direct.
 
 ## What it does
-- Netflix bilingual subtitle overlay distributed as a userscript and browser extension.
-- Starts from a copyable command: `npm install`.
-- Makes the project shape clear from its stack: Node.js, JavaScript, HTML.
+- Adds a second subtitle layer while Netflix plays.
+- Ships as a JavaScript userscript/browser-extension style project.
+- Keeps setup lightweight for people who only want the viewing upgrade.
 
 ## Quick start
 ```bash
@@ -18,17 +18,11 @@ npm install
 ```
 
 ## Example output
-````md
-# Netflix-dual-subtitles
-> Use Netflix-dual-subtitles to add bilingual subtitles to Netflix with a userscript or browser exten…
-
-```bash
-npm install
-```
-
-- Netflix bilingual subtitle overlay distributed as a userscript and browser extension.
+````text
+English subtitle line
+中文 / 日本語 / other target-language subtitle line
 ````
 
 ## Proof
-- 1 stars, recently updated; Node.js, JavaScript, HTML.
+- Small JavaScript/HTML project aimed at one clear browser use case.
 - Source: https://github.com/dangoZhang/Netflix-dual-subtitles
